@@ -11,10 +11,10 @@ switch (page){
     case '/home':
         app.innerHTML = Home();
         break;
-    case '/':
+    case '/stores':
         app.innerHTML = Stores();
         break;
-    case '/admin':
+    case '/':
         app.innerHTML = LandingPage();
         break;
 }

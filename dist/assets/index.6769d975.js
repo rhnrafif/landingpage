@@ -1,4 +1,4 @@
-(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))r(e);new MutationObserver(e=>{for(const i of e)if(i.type==="childList")for(const s of i.addedNodes)s.tagName==="LINK"&&s.rel==="modulepreload"&&r(s)}).observe(document,{childList:!0,subtree:!0});function l(e){const i={};return e.integrity&&(i.integrity=e.integrity),e.referrerpolicy&&(i.referrerPolicy=e.referrerpolicy),e.crossorigin==="use-credentials"?i.credentials="include":e.crossorigin==="anonymous"?i.credentials="omit":i.credentials="same-origin",i}function r(e){if(e.ep)return;e.ep=!0;const i=l(e);fetch(e.href,i)}})();function f(){return`
+(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))r(e);new MutationObserver(e=>{for(const i of e)if(i.type==="childList")for(const o of i.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&r(o)}).observe(document,{childList:!0,subtree:!0});function l(e){const i={};return e.integrity&&(i.integrity=e.integrity),e.referrerpolicy&&(i.referrerPolicy=e.referrerpolicy),e.crossorigin==="use-credentials"?i.credentials="include":e.crossorigin==="anonymous"?i.credentials="omit":i.credentials="same-origin",i}function r(e){if(e.ep)return;e.ep=!0;const i=l(e);fetch(e.href,i)}})();function f(){return`
    <div class="container w-full max-w-md h-[100vh] mx-auto flex items-center">
         <form action="" autocomplete="off" id="home_login"
             class="w-full bg-teal-700 text-white p-6 flex flex-col justify-center items-center gap-4 rounded-lg">
@@ -22,7 +22,7 @@
     <div class="w-[200px] mx-auto mt-10 mb-8">
             <img id="" src="${a}" alt="">
         </div>
-    `}function o(a,t,l){return`
+    `}function s(a,t,l){return`
         <div class="w-full flex justify-center items-center gap-2 px-2 py-1 bg-dark text-white rounded-md">
             <div class="w-7">
                 <img id="" src="${a}" alt="">
@@ -81,11 +81,11 @@
             <div class="grid grid-cols-2 gap-5">
             
             <!-- Ecommerce Toko -->
-            ${o("./img/shopee.png","https://shopee.co.id/rhnrafif","Digi Creative")}
-            ${o("./img/tokopedia.png","https://shopee.co.id/rhnrafif","Digi School")}
+            ${s("./img/shopee.png","https://shopee.co.id/rhnrafif","Digi Creative")}
+            ${s("./img/tokopedia.png","https://shopee.co.id/rhnrafif","Digi School")}
             <!--
-            ${o("./img/tokopedia.png","https://shopee.co.id/rhnrafif","Digi School")}
-            ${o("./img/tokopedia.png","https://shopee.co.id/rhnrafif","Digi School")}
+            ${s("./img/tokopedia.png","https://shopee.co.id/rhnrafif","Digi School")}
+            ${s("./img/tokopedia.png","https://shopee.co.id/rhnrafif","Digi School")}
             -->
             <!-- Ecommerce Toko End-->
             </div> 
@@ -143,4 +143,4 @@
          <button class="w-1/2 h-10 bg-light text-dark px-2 py-1 rounded-lg mt-4" type="submit">SUBMIT</button>
       </form>
    </div>
-    `}const n=document.getElementById("app"),h=document.location.pathname;switch(h){case"/home":n.innerHTML=f();break;case"/":n.innerHTML=g();break;case"/admin":n.innerHTML=x();break}
+    `}const n=document.getElementById("app"),h=document.location.pathname;switch(h){case"/home":n.innerHTML=f();break;case"/stores":n.innerHTML=g();break;case"/":n.innerHTML=x();break}
