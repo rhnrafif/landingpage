@@ -143,4 +143,4 @@
          <button class="w-1/2 h-10 bg-light text-dark px-2 py-1 rounded-lg mt-4" type="submit">SUBMIT</button>
       </form>
    </div>
-    `}const n=document.getElementById("app"),h=document.location.pathname;switch(h){case"/home":n.innerHTML=f();break;case"/admin":n.innerHTML=g();break;case"/":n.innerHTML=x();break}
+    `}const n=document.getElementById("app"),h=document.location.pathname;switch(h){case"/home":n.innerHTML=f();break;case"/":n.innerHTML=g();break;case"/admin":n.innerHTML=x();break}
