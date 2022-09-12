@@ -1,4 +1,4 @@
-(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))o(e);new MutationObserver(e=>{for(const i of e)if(i.type==="childList")for(const s of i.addedNodes)s.tagName==="LINK"&&s.rel==="modulepreload"&&o(s)}).observe(document,{childList:!0,subtree:!0});function l(e){const i={};return e.integrity&&(i.integrity=e.integrity),e.referrerpolicy&&(i.referrerPolicy=e.referrerpolicy),e.crossorigin==="use-credentials"?i.credentials="include":e.crossorigin==="anonymous"?i.credentials="omit":i.credentials="same-origin",i}function o(e){if(e.ep)return;e.ep=!0;const i=l(e);fetch(e.href,i)}})();function f(){return`
+(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))r(e);new MutationObserver(e=>{for(const i of e)if(i.type==="childList")for(const s of i.addedNodes)s.tagName==="LINK"&&s.rel==="modulepreload"&&r(s)}).observe(document,{childList:!0,subtree:!0});function l(e){const i={};return e.integrity&&(i.integrity=e.integrity),e.referrerpolicy&&(i.referrerPolicy=e.referrerpolicy),e.crossorigin==="use-credentials"?i.credentials="include":e.crossorigin==="anonymous"?i.credentials="omit":i.credentials="same-origin",i}function r(e){if(e.ep)return;e.ep=!0;const i=l(e);fetch(e.href,i)}})();function f(){return`
    <div class="container w-full max-w-md h-[100vh] mx-auto flex items-center">
         <form action="" autocomplete="off" id="home_login"
             class="w-full bg-teal-700 text-white p-6 flex flex-col justify-center items-center gap-4 rounded-lg">
@@ -22,7 +22,7 @@
     <div class="w-[200px] mx-auto mt-10 mb-8">
             <img id="" src="${a}" alt="">
         </div>
-    `}function r(a,t,l){return`
+    `}function o(a,t,l){return`
         <div class="w-full flex justify-center items-center gap-2 px-2 py-1 bg-dark text-white rounded-md">
             <div class="w-7">
                 <img id="" src="${a}" alt="">
@@ -31,11 +31,11 @@
                 <a id="" href="${t}" target="_blank">${l}</a>
             </div>
         </div>
-    `}function d(a,t,l,o){return`
+    `}function d(a,t,l,r){return`
     <div
         class="flex flex-col justify-center max-w-[150px] p-1 gap-1 rounded-lg text-dark bg-white outline outline-1 outline-dark drop-shadow-[5px_6px_7px_rgba(0,0,0,0.130)]">
         <div class="h-full w-full rounded-lg overflow-hidden">
-            <a href="${o}" target="_blank"><img class="w-full h-full" src="${a}" alt="${t}"></a>
+            <a href="${r}" target="_blank"><img class="w-full h-full" src="${a}" alt="${t}"></a>
         </div>
         <div class="h-full w-full flex flex-col items-center justify-between p-1 gap-2">
             <h2 class="text-base font-medium">${t}</h2>
@@ -49,11 +49,11 @@
         <p class="text-xs">Check our <span class="bg-white text-dark mx-1 px-1 rounded font-medium"><a href="https://rhnrafif.site" target="_blank">Official
                     Store</a></span></p>
     </div>
-    `}function c(a,t,l,o){return`
+    `}function c(a,t,l,r){return`
         <div
         class="flex flex-col justify-center max-w-[150px] p-1 gap-1 rounded-lg text-white bg-dark  drop-shadow-[5px_6px_7px_rgba(0,0,0,0.130)]">
         <div class="h-full w-full rounded-lg outline outline-1 outline-white overflow-hidden">
-            <a href="${o}" target="_blank"><img class="w-full h-full" src="${a}" alt="${t}"></a>
+            <a href="${r}" target="_blank"><img class="w-full h-full" src="${a}" alt="${t}"></a>
         </div>
         <div class="h-full w-full flex flex-col items-center justify-between p-1 gap-2">
             <h2 class="text-base font-medium">${t}</h2>
@@ -81,11 +81,11 @@
             <div class="grid grid-cols-2 gap-5">
             
             <!-- Ecommerce Toko -->
-            ${r("./img/shopee.png","https://shopee.co.id/rhnrafif","Digi Creative")}
-            ${r("./img/tokopedia.png","https://shopee.co.id/rhnrafif","Digi School")}
+            ${o("./img/shopee.png","https://shopee.co.id/rhnrafif","Digi Creative")}
+            ${o("./img/tokopedia.png","https://shopee.co.id/rhnrafif","Digi School")}
             <!--
-            ${r("./img/tokopedia.png","https://shopee.co.id/rhnrafif","Digi School")}
-            ${r("./img/tokopedia.png","https://shopee.co.id/rhnrafif","Digi School")}
+            ${o("./img/tokopedia.png","https://shopee.co.id/rhnrafif","Digi School")}
+            ${o("./img/tokopedia.png","https://shopee.co.id/rhnrafif","Digi School")}
             -->
             <!-- Ecommerce Toko End-->
             </div> 
@@ -102,7 +102,6 @@
                     ${c("./img/camera.jpg","Camera Murahh Kanonn 34444 Wireless Cable Dediavted SLot","200.000","https://shopee.co.id/rhnrafif")}
                     ${d("./img/camera.jpg","Camera Murahh","200.000","https://shopee.co.id/rhnrafif")}
             </div>
-            <a href="./home" >Homeeee</a>
         </div>
         <!--  -->
     </div>
@@ -110,7 +109,7 @@
 
     <script type="module" src="./main.js"><\/script>
 </body>
-    `}function h(){return`
+    `}function g(){return`
        <div class="container w-full max-w-md h-[100vh] mx-auto flex items-center">
       <form action="" class="w-full bg-teal-700 text-white p-6 flex flex-col justify-center items-center gap-4 rounded-lg">
          <div class="w-[300px] flex justify-between items-center">
@@ -144,4 +143,4 @@
          <button class="w-1/2 h-10 bg-light text-dark px-2 py-1 rounded-lg mt-4" type="submit">SUBMIT</button>
       </form>
    </div>
-    `}const n=document.getElementById("app"),g=document.location.pathname;switch(g){case"/home":n.innerHTML=f();break;case"/admin":n.innerHTML=h();break;case"/":n.innerHTML=x();break}
+    `}const n=document.getElementById("app"),h=document.location.pathname;switch(h){case"/home":n.innerHTML=f();break;case"/admin":n.innerHTML=g();break;case"/":n.innerHTML=x();break}

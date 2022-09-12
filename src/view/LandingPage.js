@@ -48,7 +48,6 @@ export default function LandingPage(){
                     ${ProductsDark("./img/camera.jpg", "Camera Murahh Kanonn 34444 Wireless Cable Dediavted SLot", "200.000", "https://shopee.co.id/rhnrafif")}
                     ${Products("./img/camera.jpg", "Camera Murahh", "200.000", "https://shopee.co.id/rhnrafif")}
             </div>
-            <a href="./home" >Homeeee</a>
         </div>
         <!--  -->
     </div>
