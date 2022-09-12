@@ -1,0 +1,22 @@
+{
+  "name": "landing_page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./styles.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vite": "^3.1.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
+}
